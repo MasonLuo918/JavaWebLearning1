@@ -15,7 +15,6 @@
     <%
         //获取邮箱地址
         String mailAdd = request.getParameter("mailAdd");
-        out.print(mailAdd);
         //实例化Email
         Email email = new Email(mailAdd);
         if(email.isEmail()){
