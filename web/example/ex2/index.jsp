@@ -5,6 +5,14 @@
     <title>中转页面</title>
 </head>
 <body>
-<jsp:forward page="login.jsp"/>
+<input type="file" id="img">
+<button onclick="get()" value="get"></button>
 </body>
+
+<script type="text/javascript">
+    function get() {
+        var path = document.getElementById("img").value;
+        console.log(path);
+    }
+</script>
 </html>
